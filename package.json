@@ -1,0 +1,24 @@
+{
+  "name": "jogo_galo",
+  "version": "1.0.0",
+  "description": "A minha primeira app em js",
+  "main": "index.html",
+  "engines": {
+    "node": "12.11.1"
+    },
+  "scripts": {
+    "start": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erzsebete/jogo-galo.git"
+  },
+  "keywords": [],
+  "author": "erzsebete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erzsebete/jogo-galo/issues"
+  },
+  "homepage": "https://github.com/erzsebete/jogo-galo#readme"
+}
