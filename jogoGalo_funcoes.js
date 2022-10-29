@@ -24,11 +24,6 @@ function limpar ()
     jogador2Pontos.innerHTML = "0"
     ronda = 0
 
-/*    fraseWinJ1.classList.remove("hide")
-    fraseWinJ2.classList.remove("hide")
-    fraseEmpates.classList.remove("hide")*/
-
-
     document.querySelectorAll('.cell')
         .forEach(cell => cell.innerHTML = "");                     //limpa as células
 
@@ -53,7 +48,6 @@ function jogoRestart()
     document.querySelector('#boxjog2').style.borderBottom = 'transparent';
 
     restart.classList.add("hidden")
-
 
 
     let B = startTimer()
@@ -199,7 +193,7 @@ function validar ()
 
                 pontosJogador1 > pontosJogador2 ? jogadorOn = jogador1 : jogadorOn = jogador2
 
-                guardarLocalStorage ()
+                // guardarLocalStorage ()
 
                 // Info da caixinha:
 
@@ -253,7 +247,7 @@ function validar ()
 
             //Guardar na Local Storage
 
-            guardarLocalStorage()
+            // guardarLocalStorage()
 
             // Info da caixinha:
 
@@ -297,19 +291,19 @@ function validar ()
 //________________ GUARDAR NA LOCAL STORAGE:
 
 
-function guardarLocalStorage ()
-{
-    let dados = {
-        date: getCurrentDateAsString(),
-        time: getCurrentTimeAsString(),
-        game: "Jogo do Galo",
-        winner: jogadorOn.value,
-        duration: tempoDecorridoTotal.innerText}
+// function guardarLocalStorage ()
+// {
+//     let dados = {
+//         date: getCurrentDateAsString(),
+//         time: getCurrentTimeAsString(),
+//         game: "Jogo do Galo",
+//         winner: jogadorOn.value,
+//         duration: tempoDecorridoTotal.innerText}
 
-    let historicList = JSON.parse(localStorage.getItem("Dados"))
-    historicList.push(dados)
-    localStorage.setItem("Dados", JSON.stringify(historicList))
-}
+//     let historicList = JSON.parse(localStorage.getItem("Dados"))
+//     historicList.push(dados)
+//     localStorage.setItem("Dados", JSON.stringify(historicList))
+// }
 
 
 
