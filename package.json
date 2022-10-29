@@ -2,12 +2,12 @@
   "name": "jogo_galo",
   "version": "1.0.0",
   "description": "A minha primeira app em js",
-  "main": "jogoGalo_Index.js",
+  "main": "tic_tac_toe.html",
   "engines": {
     "node": "12.11.1"
     },
   "scripts": {
-    "start": "jogoGalo_Index.js",
+    "start": "tic_tac_toe.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
