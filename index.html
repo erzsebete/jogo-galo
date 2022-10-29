@@ -1,88 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Jogo do Galo</title>
-    <link rel="stylesheet" href="./css/tic_tac_toe.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jogo do Galo</title>
+    <link rel="stylesheet" href="./css/tic_tac_toe.css" />
+  </head>
+  <body>
+    <!--_________________________ escolha de HUMAN ou SOLO/AI _______________________-->
 
-<!--_________________________ escolha de HUMAN ou SOLO/AI _______________________-->
+    <section class="g_sections" id="galo_humanmachine">
+      <h1 class="g_h1">JOGO DO GALO</h1>
 
-<section  class="g_sections" id="galo_humanmachine">
-
-    <h1 class="g_h1"> JOGO DO GALO </h1>
-
-    <div class="button_toggle">
+      <div class="button_toggle">
         <label id="g_labelHuman">COMPETIÇÃO</label>
 
         <label class="switch">
-            <input type="checkbox" id="g_toggleinput">
-            <span class="slider round"></span>
+          <input type="checkbox" id="g_toggleinput" />
+          <span class="slider round"></span>
         </label>
 
         <label id="g_labelIA">SOLO</label>
-    </div>
+      </div>
 
-    <input type="button" class="g_buttons" value="Next" id="galo_botaonext" />
+      <input type="button" class="g_buttons" value="Next" id="galo_botaonext" />
+      <input
+        type="button"
+        class="g_buttons"
+        value="Pontuações"
+        id="galo_botaomenu"
+        onclick="location.href=`history.html` "
+      />
+    </section>
 
-</section>
+    <!--_________________________ HUMAN - escolha de jogadores _______________________-->
 
+    <section class="g_sections" id="g_escolhajogadores">
+      <h1 class="g_h1">JOGO DO GALO</h1>
 
-<!--_________________________ HUMAN - escolha de jogadores _______________________-->
-
-
-<section class="g_sections" id="g_escolhajogadores">
-    <h1 class="g_h1"> JOGO DO GALO </h1>
-
-    <div id="g_divinserirJogadores">
-
-        <h2 class="g_h2 X" >X</h2>
-        <input type="text" id="galojogador1" placeholder="Jogador I"/>
+      <div id="g_divinserirJogadores">
+        <h2 class="g_h2 X">X</h2>
+        <input type="text" id="galojogador1" placeholder="Jogador I" />
 
         <h2 class="g_h2 O" id="g_jogadoresh2">O</h2>
-        <input type="text" id="galojogador2" placeholder="Jogador II"/>
-    </div>
+        <input type="text" id="galojogador2" placeholder="Jogador II" />
+      </div>
 
-    <input type="button" class="g_buttons" value="Jogar" id="g_botaostart" />
+      <input type="button" class="g_buttons" value="Jogar" id="g_botaostart" />
 
-    <button class="g_jogoInicio g_buttons">Voltar ao Início</button>
-</section>
+      <button class="g_jogoInicio g_buttons">Voltar ao Início</button>
+    </section>
 
-<!--_________________________ Jogo _______________________-->
+    <!--_________________________ Jogo _______________________-->
 
-<section class="g_sections" id="g_sectionJogo">
-    <h1 class="g_h1"> JOGO DO GALO </h1>
+    <section class="g_sections" id="g_sectionJogo">
+      <h1 class="g_h1">JOGO DO GALO</h1>
 
-
-    <div id="containerPontos">
-
+      <div id="containerPontos">
         <div class="g_box" id="boxjog1">
-            <div class="icon_jogador">
-                <img src="./img/x.gif" id = "imgXPontos" alt="Imagem do X" >
-                <h2 id="g_nomeJogador1" class="g_h2"></h2>
-            </div>
-            <div> <h2 id=jogador1Pontos class="g_h2"></h2></div>
+          <div class="icon_jogador">
+            <img src="./img/x.gif" id="imgXPontos" alt="Imagem do X" />
+            <h2 id="g_nomeJogador1" class="g_h2"></h2>
+          </div>
+          <div><h2 id="jogador1Pontos" class="g_h2"></h2></div>
         </div>
 
         <div class="g_box" id="boxronda">
-            <h2 id="rondah2">Ronda</h2>
-            <h2 id="rondaFrase" class="g_h2"></h2>
-            <h2 id="g_timer" class="g_h2"></h2>
+          <h2 id="rondah2">Ronda</h2>
+          <h2 id="rondaFrase" class="g_h2"></h2>
+          <h2 id="g_timer" class="g_h2"></h2>
         </div>
 
         <div class="g_box" id="boxjog2">
-            <div class="icon_jogador">
-                <img src="./img/o.gif" id = "imgOPontos" alt="Imagem do O">
-                <h2 id="g_nomeJogador2" class="g_h2"></h2>
-            </div>
-            <div> <h2 id=jogador2Pontos class="g_h2"></h2></div>
+          <div class="icon_jogador">
+            <img src="./img/o.gif" id="imgOPontos" alt="Imagem do O" />
+            <h2 id="g_nomeJogador2" class="g_h2"></h2>
+          </div>
+          <div><h2 id="jogador2Pontos" class="g_h2"></h2></div>
         </div>
+      </div>
 
-    </div>
-
-    <div class="board">
+      <div class="board">
         <div class="cell" id="0"></div>
         <div class="cell" id="1"></div>
         <div class="cell" id="2"></div>
@@ -92,32 +90,32 @@
         <div class="cell" id="6"></div>
         <div class="cell" id="7"></div>
         <div class="cell" id="8"></div>
-    </div>
+      </div>
 
-    <h2 id="g_timer_total" class="g_h2"></h2>
-    <h3 id="g_fraseJogadorOn"></h3>
+      <h2 id="g_timer_total" class="g_h2"></h2>
+      <h3 id="g_fraseJogadorOn"></h3>
 
-    <button id="g_jogoRestart" class="g_buttons">Nova Ronda</button>
-    <button id="g_inicioFim" class="g_jogoInicio g_buttons">Voltar ao Início</button>
+      <button id="g_jogoRestart" class="g_buttons">Nova Ronda</button>
+      <button id="g_inicioFim" class="g_jogoInicio g_buttons">
+        Voltar ao Início
+      </button>
 
-    <div id="vencedor" class="hide">
+      <div id="vencedor" class="hide">
         <div id="caixinha">
-            <span id="cruz">&times;</span>
-            <div id="frasesFim">
-                <h3 id="g_fraseVencedor"></h3>
-                <h3 id="frasenotai">Resumo do Jogo:</h3>
-                <h3 id="fraseWinJ1"></h3>
-                <h3 id="fraseWinJ2"></h3>
-                <h3 id="fraseEmpates"></h3>
-            </div>
-
+          <span id="cruz">&times;</span>
+          <div id="frasesFim">
+            <h3 id="g_fraseVencedor"></h3>
+            <h3 id="frasenotai">Resumo do Jogo:</h3>
+            <h3 id="fraseWinJ1"></h3>
+            <h3 id="fraseWinJ2"></h3>
+            <h3 id="fraseEmpates"></h3>
+          </div>
         </div>
-    </div>
-</section>
-
-</body>
-<script src="jogoGalo_funcoes.js"></script>
-<script src="jogoGalo_AI.js"></script>
-<script src="jogoGalo_Index.js"></script>
-
+      </div>
+    </section>
+  </body>
+  <script src="jogoGalo_funcoes.js"></script>
+  <script src="jogoGalo_AI.js"></script>
+  <script src="jogoGalo_Index.js"></script>
+  <script src="history.js"></script>
 </html>
