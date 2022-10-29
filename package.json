@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erzsebete/Jogo_Galo.git"
+    "url": "git+https://github.com/erzsebete/jogo-galo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/erzsebete/Jogo_Galo/issues"
+    "url": "https://github.com/erzsebete/jogo-galo/issues"
   },
-  "homepage": "https://github.com/erzsebete/Jogo_Galo#readme"
+  "homepage": "https://github.com/erzsebete/jogo-galo#readme"
 }
