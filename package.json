@@ -1,9 +1,13 @@
 {
   "name": "jogo_galo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minha primeira app em js",
   "main": "jogoGalo_Index.js",
+  "engines": {
+    "node": "12.11.1"
+    },
   "scripts": {
+    "start": "jogoGalo_Index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +15,7 @@
     "url": "git+https://github.com/erzsebete/jogo-galo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "erzsebete",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/erzsebete/jogo-galo/issues"
