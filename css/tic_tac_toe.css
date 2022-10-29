@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+/*declarar variaveis globais html*/
+:root {
+    --cinzentoescuro: rgb(173, 192, 192);
+    --verdeh1: rgb(172, 176, 176);
+    --corClara: rgb(228, 230, 230);
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+    color: gray;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: inherit;
+    background: linear-gradient(to left, var(--cinzentoescuro), var(--corClara), var(--cinzentoescuro));
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.95;
+}
+
+/*___________ SECTION 1 __ escolha de HUMAN ou AI _____________*/
+
+/*_Todas as Secções: */
+
+.g_sections
+{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*_Todos os h1: */
+
+.g_h1
+{
+    text-align: center;
+    text-shadow: 2px 2px var(--cinzentoescuro);
+    margin: 0;
+    padding: 0;
+    font-size: 60pt;
+    color: var(--corClara);
+}
+
+/*_Todos os h2: */
+
+.g_h2
+{
+    text-align: center;
+    /*padding-top: 5%;*/
+    font-size: 16pt;
+    color: #756a6a;
+    text-shadow: 2px 2px var(--cinzentoescuro);
+}
+
+/*_Todos os botões: */
+
+#galo_botaonext
+{
+    margin-bottom: 0;
+}
+
+#galo_botaomenu
+{
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+
+.g_buttons
+{
+    border-color: whitesmoke;
+    opacity: 0.3;
+    border-radius: 5px;
+    margin: 2px;
+    height: 5%;
+    width: 70%;
+    color: whitesmoke;
+    background-color: darkslategrey;
+}
+
+.g_jogoInicio
+{
+    margin-bottom: 5%;
+}
+
+#g_inicioFim
+{
+    margin-bottom: 3%;
+}
+
+/*___ LABELS HUMANO / IA ___*/
+
+#g_labelHuman
+{
+    font-size: 15pt;
+    align-self: center;
+    justify-self: right;
+    color: #788384FF;
+    text-shadow: 2px 2px #c0c1c0;
+}
+
+#g_labelHuman:hover
+{
+    transition: 0.1s;
+    transform: scale(1.8)translate(2%, 0);
+
+}
+
+#g_labelIA
+{
+    font-size: 15pt;
+    align-self: center;
+    justify-self: left;
+    color:#788384FF;
+    text-shadow: 2px 2px #c0c1c0;
+}
+
+#g_labelIA:hover {
+    transition: 0.1s;
+    transform: scale(2)translate(2%, 0);
+
+}
+
+
+
+
+/*____________O botão toggle ______________*/
+.button_toggle
+{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+/* The switch - a capsula à volta do slider (da bolinha) */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+/* __ esconder a checkbox __ */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* O slider - a bolinha */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, var(--cinzentoescuro), #e5ffff, #e491f1);
+
+    -webkit-box-reflect:
+            below 5px
+            -webkit-gradient(linear, left top, left bottom, from(transparent),
+            color-stop(0.5, transparent),
+            to(rgba(255, 255, 255, 0.5)));
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    left: 5px;
+    bottom: 5px;
+    background: linear-gradient(to right, #9b9b9b, #e5e8e9, #9b9b9b);
+    box-shadow: 1px 1px 2px black;
+    -webkit-transition: .3s;
+    transition: .5s;
+}
+
+input:checked + .slider {
+    background-color: deeppink;
+}
+
+input:focus + .slider {
+    box-shadow: 0px -1px 1px black;
+}
+
+input:checked + .slider:before {
+    /*-webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);*/
+    transform: translateX(40px);
+}
+
+/* Rounded sliders */
+
+/*__colocar a capsula redonda__*/
+
+.slider.round {
+    border-radius: 34px;
+}
+
+/*__colocar a bola redonda__*/
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/*___________SECTION 2 __ HUMAN - escolha de jogadores  _____________*/
+
+
+#g_divinserirJogadores
+{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinzentoescuro);
+    border-radius: 10px;
+}
+
+#g_divinserirJogadores > *
+{
+    margin: 2%;
+}
+
+#g_divinserirJogadores input {
+    flex: 1;
+    width: 0;
+    max-width: 36%;
+    height: 50%;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: 1px 1px #849093;
+    background-color: #d2d9db;
+}
+
+#g_divinserirJogadores input:focus
+{
+    background-color: whitesmoke;
+}
+
+
+
+/*___________SECTION 3 __ HUMAN - jogo _____________*/
+
+
+
+#containerPontos
+{
+    margin-top: 2%;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+
+.g_box {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    margin: 2px;
+    border-bottom-color: transparent;
+}
+
+
+
+.icon_jogador
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+img
+{
+    margin-top: 5%;
+    width: 15%;
+}
+
+#imgXPontos
+{
+    margin-top: 0;
+}
+
+#imgOPontos
+{
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+#rondah2
+{
+    font-size: 15pt;
+    margin-block-end: 0 !important;
+}
+
+
+
+#frase_nomes
+{
+    color: darkslategrey;
+}
+
+
+.board
+{
+    color: white;
+    background-color: transparent;
+    align-items: center;
+    margin: 2% auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    justify-content: center;
+    grid-gap: 10px;
+
+}
+
+.cell
+{
+    background-color: rgb(221, 221, 221);
+    border-radius:25%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 26pt;
+    box-shadow: 3px 3px #232321;
+
+}
+
+.cell:hover{
+    opacity:0.6;
+}
+
+
+
+.cellWin
+{
+    animation: blinkingBackground 0.5s infinite;
+    opacity: 1;
+    position: relative;
+
+
+}
+
+@keyframes blinkingBackground{
+    0%		{ background-color: rgb(249, 251, 246);}
+    25%		{ background-color: rgb(157, 157, 157);}
+    50%		{ background-color: rgb(18,   17,  17);}
+    75%		{ background-color: rgb(105, 106, 106);}
+    90%	    { background-color: rgb(130, 131, 131);}
+    100%	{ background-color: rgb(243, 245, 245);}
+}
+
+.hide
+{
+    display: none !important;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+#vencedor
+{
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#caixinha
+{
+    background-color: rgba(7, 7, 7, 0.75);
+    padding: 10px;
+    width: 500px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+    border-radius: 15px;
+
+}
+
+#cruz {
+    color: rgba(127, 126, 126, 0.72);
+    text-align: right;
+    margin-right: 10%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#cruz:hover,
+#cruz:focus {
+    color: #ee0707;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#g_fraseVencedor
+{
+    text-align: center;
+    font-size: 20pt;
+    color: #a5a6a6;
+}
+
+#g_fraseJogadorOn
+{
+    margin: 2%;
+}
+
+.gifs
+{
+    width:  100%;
+    height: 100%;
+    border-radius: 25%;
+}
+
+#g_timer_total
+{
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+
+#g_timer
+{
+    margin-top: 0;
+    font-size: 10pt;
+    font-style: italic;
+    color: #929292;
+}
+
+#frasesFim > *
+{
+    display: flex;
+    justify-content: center;
+}
