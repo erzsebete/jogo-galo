@@ -30,8 +30,8 @@ let section_g_inicio = document.querySelector("#galo_humanmachine"),
     pontosJogador1 = 0,
     pontosJogador2 = 0,
     empateN = 0,
-    x = '<img src="../img/x.gif" class="gifs"  alt="Imagem do X">',
-    o = '<img src="../img/o.gif"class="gifs"  alt="Imagem do X">';
+    x = '<img src="./img/x.gif" class="gifs"  alt="Imagem do X">',
+    o = '<img src="./img/o.gif"class="gifs"  alt="Imagem do X">';
 
 
 
