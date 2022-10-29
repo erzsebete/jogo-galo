@@ -1,0 +1,20 @@
+{
+  "name": "jogo_galo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "history.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erzsebete/Jogo_Galo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erzsebete/Jogo_Galo/issues"
+  },
+  "homepage": "https://github.com/erzsebete/Jogo_Galo#readme"
+}
