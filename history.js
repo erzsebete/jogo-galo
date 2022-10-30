@@ -3,19 +3,30 @@
 let scores = [
   { date: "2022/08/04",
     time: "15:25",
-    winner: "Elisabete",
-    duration: "02:49",
+    winner: "Pedro",
+    duration: "05:55",
   },
   { date: "2022/08/04",
     time: "03:22",
     winner: "Ice",
-    duration: "00:04",
+    duration: "01:04",
   },
   { date: "2022/08/04",
     time: "12:00",
-    winner: "Macaco",
+    winner: "Tai",
     duration: "02:11",
-  }, ]
+  }, 
+  { date: "2022/08/04",
+  time: "15:25",
+  winner: "Cátia",
+  duration: "01:27",
+},
+{ date: "2022/08/04",
+    time: "15:25",
+    winner: "Beta",
+    duration: "00:13",
+  },
+]
 
 
 // Para no início já termos algum histórico - adiciona a lista scores à local storage
