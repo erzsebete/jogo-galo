@@ -49,9 +49,9 @@ updateScores(dadosGuardados)
 //Para cada elemento da list mostrar conteúdo
 
 function updateScores(scoreList){
-  let content = scoreList
-      .map(gameLogElement)
-      .join('\n');
+  let content = scoreList.reverse()
+                         .map(gameLogElement)
+                         .join('\n');
   document.querySelector("#scores").innerHTML = content;}
 
 
