@@ -193,7 +193,7 @@ function validar ()
 
                 pontosJogador1 > pontosJogador2 ? jogadorOn = jogador1 : jogadorOn = jogador2
 
-                // guardarLocalStorage ()
+                guardarLocalStorage ()
 
                 // Info da caixinha:
 
@@ -247,7 +247,7 @@ function validar ()
 
             //Guardar na Local Storage
 
-            // guardarLocalStorage()
+            guardarLocalStorage()
 
             // Info da caixinha:
 
@@ -288,22 +288,22 @@ function validar ()
 }
 
 
-//________________ GUARDAR NA LOCAL STORAGE:
+// ________________ GUARDAR NA LOCAL STORAGE:
 
 
-// function guardarLocalStorage ()
-// {
-//     let dados = {
-//         date: getCurrentDateAsString(),
-//         time: getCurrentTimeAsString(),
-//         game: "Jogo do Galo",
-//         winner: jogadorOn.value,
-//         duration: tempoDecorridoTotal.innerText}
+function guardarLocalStorage ()
+{
+    let dados = {
+        date: getCurrentDateAsString(),
+        time: getCurrentTimeAsString(),
+        game: "Jogo do Galo",
+        winner: jogadorOn.value,
+        duration: tempoDecorridoTotal.innerText}
 
-//     let historicList = JSON.parse(localStorage.getItem("Dados"))
-//     historicList.push(dados)
-//     localStorage.setItem("Dados", JSON.stringify(historicList))
-// }
+    let historicList = JSON.parse(localStorage.getItem("Dados"))
+    historicList.push(dados)
+    localStorage.setItem("Dados", JSON.stringify(historicList))
+}
 
 
 

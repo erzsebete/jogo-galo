@@ -54,19 +54,27 @@ iframe {
     margin-top: 2%;
 }
 .gameLog {
-    margin-bottom: 10px;
-}
-
-.row1 {
+    margin-bottom: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 10pt;
 }
+
+
+.row1 {
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10pt;   
+}
 .row2
 {
     font-size: 10pt;
+    margin-bottom: 10px;
 }
 .historico
 {
