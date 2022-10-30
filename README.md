@@ -9,3 +9,5 @@ Humano VS Humano
 e
 
 Humano VS Máquina
+
+Experimentem jogar em: jogo-galo.netlify.app
